@@ -1,0 +1,46 @@
+body {
+background: url('./casino-advertising-neon-banner-design-with-playing-cards-and-casino-chips-on-purple-background-vector.png') no-repeat center center fixed; /* Imagen de fondo */
+background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+}
+
+/* El contenedor debe mostrar solo una imagen de 512px */
+.roulette-container {
+    width: 512px; /* Ancho de una sola imagen (512px) */
+    height: 1536px; /* Altura de una imagen */
+    overflow: hidden; /* Ocultar el resto de las imágenes */
+    position: relative;
+    border: 6px solid #DAA520; /* Borde dorado para darle un toque de casino */
+    border-radius: 20px; /* Bordes redondeados para suavizar */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Sombra para darle más profundidad */
+    margin: 20px auto; /* Centrar el contenedor */
+    background: #000; /* Fondo oscuro para resaltar las imágenes */
+}
+
+/* El strip de imágenes ahora tiene 2 copias de la imagen completa de 7168px */
+#roulette {
+    display: flex;
+    position: absolute;
+    top: 0;
+}
+
+.image-strip {
+    width: 7168px; /* Ancho de cada copia de la imagen completa */
+    height: 1536px;
+}
+
+#spin-btn {
+    display: block;
+    width: 200px; /* Ancho del botón */
+    height: 60px; /* Alto del botón */
+    margin: 30px auto; /* Centrar el botón */
+    background: linear-gradient(145deg, #FF0000, #FFD700); /* Degradado rojo a dorado */
+    border: 3px solid #DAA520; /* Borde dorado */
+    border-radius: 30px; /* Bordes redondeados */
+    color: white; /* Texto blanco */
+    font-size: 20px; /* Tamaño de texto más grande */
+    font-weight: bold; /* Negrita */
+    cursor: pointer; /* Cambia a cursor de mano al pasar sobre él */
+    text-shadow: 1px 1px 3px black; /* Sombra en el texto */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3), 0px 0px 15px rgba(255, 255, 0, 0.5); /* Sombra y brillo para efecto de botón llamativo */
+    transition: transform 0.2s ease-in-out; /* Animación para el botón */
+}
